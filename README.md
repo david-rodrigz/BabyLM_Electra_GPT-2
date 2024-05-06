@@ -9,8 +9,8 @@ The BabyLM Challenge is a competition focused on training efficient language mod
 For each the `training_electra.ipynb` and the `training_gpt2.ipynb` notebooks: 
 
 1. Install the following libraries:
-    * `accelerate`
-    * `transformers[torch]`
+    * `pip install accelerate`
+    * `pip install 'transformers[torch]'`
 2. Step through the notebook and wait for pre-training processes to complete.
 
 For BLiMP and GLUE evaluations, step through the `evaluations.ipynb` notebook. All results for each sub evaluation can be found in the `electra_dir` and the `gpt2_dir`. The BLiMP results are located in the `finetune/` folder while the GLUE results are located in the `zeroshot/` folder. Ue the `get_results.sh` script to summarize the results for each evaluation as so:
@@ -25,8 +25,6 @@ get_results.sh GPT2_dir/zeroshot
 # Results
 
 The following are the result metrics for Electra and GPT2 as well as some baseline metrics from models included in [BabyLM's evaluation pipeline](https://github.com/babylm/evaluation-pipeline-2023).
-
-# Results
 
 *BLiMP* (Acc.)
 | Model | Anaphor Agr. | Agr. Structure | Binding | Control/Raising | D-N Agr. | Ellipsis | Filler-Gap | Irregular Forms | Island Effects | NPI Licensing | Quantifiers | S-V Agr. |
